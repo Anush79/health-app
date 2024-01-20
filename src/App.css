@@ -449,6 +449,9 @@ nav .menu-btn,
 .footer a:hover {
   text-decoration: underline;
 }
+input[type="submit"]:hover{
+cursor: pointer;
+}
 @media (max-width: 620px) {
   #contact form {
     width: 90%;

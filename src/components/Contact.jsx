@@ -1,9 +1,8 @@
 import { useState } from "react";
 import DoctorsList from "./DoctorsList";
-import { useParams } from "react-router-dom";
+import toast from "react-hot-toast";
 
 function Contact() {
-  // const {city} = useParams()
   const [userDetails, setUserDetails] = useState({
     fullName: "",
     phoneNumber: "",
@@ -17,14 +16,28 @@ function Contact() {
 
   const onChangeHandler = (e) => {
     const { name, value} = e.target;
-  
     setUserDetails({ ...userDetails, [name]: value });
   };
+
+  const onSubmitHandler = (e)=>{
+    e.preventDefault();
+    toast.success(`Thanks ${userDetails.fullName} for booking appointment of ${userDetails.appointment}`)
+    setUserDetails({
+      fullName: "",
+    phoneNumber: "",
+    age: "",
+    prevExp: "yes",
+    city: "",
+    company: "",
+    complaints: "",
+    appointment: "",
+    })
+  }
   console.log({ userDetails });
   return (
     <div id="contact">
       <h1>Consultation booking</h1>
-      <form action="">
+      <form onSubmit={onSubmitHandler}>
         <div className="flex-row">
           <input
             type="text"
@@ -96,7 +109,7 @@ function Contact() {
           onChange={onChangeHandler}
         ></textarea>
 
-        <input type="submit" value={"send"} />
+        <input type="submit" aria-label="Submit" value={"send"}  />
       </form>
     </div>
   );
