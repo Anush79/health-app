@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# FIX-HEALTH ASSIGNMENt
+
+LIVE LINK [https://fixhealth-byanushka.netlify.app/](https://fixhealth-byanushka.netlify.app/)
+
+<img width="941" alt="image" src="https://github.com/Anush79/health-app/assets/66175237/e3c1fef6-4ed9-42d3-a0c9-5e0b4672e1e3">
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
