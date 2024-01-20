@@ -18,6 +18,9 @@ ul {
 a {
   text-decoration: none;
 }
+a:hover{
+  cursor: pointer;
+}
 
 button {
   outline: none;
