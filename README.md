@@ -1,4 +1,4 @@
-# FIX-HEALTH ASSIGNMENt
+# FIX-HEALTH ASSIGNMENT
 
 LIVE LINK [https://fixhealth-byanushka.netlify.app/](https://fixhealth-byanushka.netlify.app/)
 
