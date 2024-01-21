@@ -33,7 +33,7 @@ function Contact() {
     appointment: "",
     })
   }
-  console.log({ userDetails });
+
   return (
     <div id="contact">
       <h1>Consultation booking</h1>

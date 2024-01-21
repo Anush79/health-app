@@ -40,7 +40,7 @@ export default function DoctorsList({ userDetails, onChangeHandler }) {
 
   }, [userDetails.city]);
 
-  console.log();
+  
 
   return (
     <div>
